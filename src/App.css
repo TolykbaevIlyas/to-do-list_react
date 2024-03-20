@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+}
+
+.main {
+  text-align: center;
+}
+
+.inputList {
+  width: 200px;
+  height: 40px;
+  font-size: 19px;
+  border: none;
+  border-radius: 5px;
+}
+
+.inputList:active {
+  border: none;
+}
+
+.addBtn {
+  border: none;
+  background-color: rgb(0, 166, 255);
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-left: 12px;
+  color: white;
+  font-weight: 500;
+}
+
+.addBtn:hover {
+  background-color: rgb(22, 174, 255);
+  /* transition: 0.4s; */
+}
+
+.addBtn:active {
+  background-color: rgb(92, 198, 255);
+}
+
+.ulList {
+  list-style: none;
+  font-size: 20px;
+}
+
+.ulList li {
+  border: 2px solid;
+  border-radius: 5px;
+  width: 350px;
+  margin: 5px auto;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  padding: 15px;
+}
+
+.textList {
+  flex: 1;
+}
+
+.deleteBtn {
+  margin-right: 18px;
+  background-color: red;
+  border-radius: 8px;
+  border: none;
+  width: 80px;
+  height: 35px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(255, 36, 36);
+}
+
+.deleteBtn:active {
+  background-color: rgb(255, 97, 97);
+}
