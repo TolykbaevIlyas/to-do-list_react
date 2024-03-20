@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 
 export default function List() {
-  const [list, Setlist] = useState(["apple", "mango", "coconut"]);
+
+  const [list, setList] = useState(["apple", "mango", "coconut"]);
+  const [word, setWord] = useState('');
 
   function addList() {
-    let input = document.querySelector(".inputList").value;
-    document.querySelector(".inputList").value = "";
-
-    if (input.trim() !== "") {
-      Setlist((l) => [...l, input]);
+    if (word.trim() !== "") {
+      setList([...list, word])
+      setWord('');
     }
   }
 
   function removeBtn(index) {
     const updateList = list.filter((_, i) => i !== index);
-    Setlist(updateList);
+    setList(updateList);
   }
 
   return (
     <div className="main">
-      <input type="text" className="inputList" placeholder="Enter..." />
+      <input type="text" className="inputList" placeholder="Enter..." value={word} onChange={(e)=>setWord(e.target.value)}/>
       <button onClick={addList} className="addBtn">
         Click
       </button>
